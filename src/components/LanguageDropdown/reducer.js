@@ -1,13 +1,12 @@
-import { resolveEach } from 'redux-resolver'
+import { resolveEach } from 'redux-resolver';
 import { updateObject } from '../../shared/utility';
-import * as actionTypes from './actionTypes'
+import * as actionTypes from './actionTypes';
 
 const initialState = {
     language: "english"
 };
 
 const setLanguage = (state, action) => {
-    console.log("action", action)
     return updateObject(state, {
         language: action.language
     });
@@ -15,4 +14,4 @@ const setLanguage = (state, action) => {
 
 export default resolveEach(initialState, {
     [actionTypes.SET_LANGUAGE]: setLanguage
-})
+});

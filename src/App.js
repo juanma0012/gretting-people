@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PeopleForm, GreetingList, LanguageDropdown } from './components'
+import { PeopleForm, GreetingList, LanguageDropdown } from './components';
 import './App.css';
 
 class App extends Component {

@@ -8,4 +8,4 @@ export const setLanguage = (language) => {
         let people = state.peopleForm.people;
         dispatch(greetingActions.setGreetings(people, language));
     }
-}
+};

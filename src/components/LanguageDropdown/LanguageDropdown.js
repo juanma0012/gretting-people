@@ -8,10 +8,10 @@ const LanguageDropdown = ({ onSetLanguage }) => {
     const languages = ['english', 'spanish', 'french', 'portuguese', 'italian'];
     const languagesList = languages.map((language, i) => (
         <option value={language} key={i}>{language.charAt(0).toUpperCase() + language.slice(1)}</option>
-    ))
+    ));
     const onChangeLanguage = e => {
         onSetLanguage(e.target.value);
-    }
+    };
     return (
         <div>
             <form >
@@ -21,16 +21,17 @@ const LanguageDropdown = ({ onSetLanguage }) => {
             </form>
         </div>
     )
-}
+};
+
 LanguageDropdown.propTypes = {
     onSetLanguage: PropTypes.func.isRequired
-}
+};
 
 const mapDispatchToProps = (dispatch) => ({
     onSetLanguage: (people) => dispatch(actions.setLanguage(people))
-})
+});
 
 export default connect(
     null,
     mapDispatchToProps
-)(LanguageDropdown)
+)(LanguageDropdown);
