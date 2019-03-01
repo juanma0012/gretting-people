@@ -1,0 +1,1 @@
+export { default as PeopleForm } from "./PeopleForm/PeopleForm";
