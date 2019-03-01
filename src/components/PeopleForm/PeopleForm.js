@@ -3,40 +3,28 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as actions from './actions'
 
-const PeopleForm = ({ onClick }) => {
-    let input;
-
+const PeopleForm = ({ onSetPeople }) => {
+    let value;
+    const onChange = e => {
+        onSetPeople(e.target.value);
+    }
     return (
         <div>
-            <form onSubmit={e => {
-                e.preventDefault()
-                if (!input.value.trim()) {
-                    return
-                }
-                onClick(input.value)
-                input.value = ''
-            }}>
-                <textarea ref={node => input = node} rows="3" cols="20"></textarea>
-                <button type="submit">
-                    Add Todo
-        </button>
+            <form>
+                <textarea value={value}  rows="3" cols="20" onChange={onChange}></textarea>
             </form>
         </div>
     )
 }
 PeopleForm.propTypes = {
-    onClick: PropTypes.func.isRequired
+    onSetPeople: PropTypes.func.isRequired
 }
 
-const mapStateToProps = (state, ownProps) => ({
-    people: state.people
-})
-
-const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: (people) => dispatch(actions.setPeople(people))
+const mapDispatchToProps = (dispatch) => ({
+    onSetPeople: (people) => dispatch(actions.setPeople(people))
 })
 
 export default connect(
-    mapStateToProps,
+    null,
     mapDispatchToProps
 )(PeopleForm)

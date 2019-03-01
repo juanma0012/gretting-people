@@ -3,17 +3,16 @@ import { updateObject } from '../../shared/utility';
 import * as actionTypes from './actionTypes'
 
 const initialState = {
-    people: [],
-    test: "ANOTHER TEST"
+    language: "english"
 };
 
-const setPeople = (state, action) => {
+const setLanguage = (state, action) => {
     console.log("action", action)
     return updateObject(state, {
-        people: action.people
+        language: action.language
     });
 };
 
 export default resolveEach(initialState, {
-    [actionTypes.SET_PEOPLE]: setPeople
+    [actionTypes.SET_LANGUAGE]: setLanguage
 })

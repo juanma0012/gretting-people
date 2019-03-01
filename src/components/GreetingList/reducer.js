@@ -3,17 +3,16 @@ import { updateObject } from '../../shared/utility';
 import * as actionTypes from './actionTypes'
 
 const initialState = {
-    people: [],
-    test: "ANOTHER TEST"
+    greetings: []
 };
 
-const setPeople = (state, action) => {
-    console.log("action", action)
+const setGreetings = (state, action) => {
+    console.log("action", action);
     return updateObject(state, {
-        people: action.people
+        greetings: action.greetings
     });
 };
 
 export default resolveEach(initialState, {
-    [actionTypes.SET_PEOPLE]: setPeople
-})
+    [actionTypes.SET_GREETINGS]: setGreetings
+});
