@@ -2,6 +2,8 @@
 This app was created using React.js and Redux libraries, following the Flux architecture to make the state immutable. Dispatching actions, handle the new data and after that, storing the new state in an unique store.
 Into the /components folder contains as the name says, the components for this app, each component is created with actions, reducer, css styles, view elements and business logic.
 
+The app is already running in [https://juanma0012.github.io/gretting-people](https://juanma0012.github.io/gretting-people).
+
 On this repository you'll find the following folders structure:
 ~~~
 ├── App.css
