@@ -1,15 +1,14 @@
 .GreetingList{
-    /* We first create a flex layout context */
   display: flex;
-  
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
   flex-flow: row wrap;
-  
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+.GreetingList > ul {
+    text-align: left;
+}
+
+.GreetingList > ul li {
+  font-size: 1em;
+  color: #535353;
+  padding: 5px;
 }
