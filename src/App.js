@@ -5,9 +5,13 @@ import './App.css';
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className="App">
+                <h1>Greeting people</h1>
+                <br></br>
                 <PeopleForm />
+                <br></br>
                 <LanguageDropdown />
+                <br></br>
                 <GreetingList />
             </div>
         );

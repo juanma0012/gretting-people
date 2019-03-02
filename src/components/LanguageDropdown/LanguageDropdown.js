@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as actions from './actions'
+import './LanguageDropdown.css';
 
 const LanguageDropdown = ({ onSetLanguage }) => {
     let select;
@@ -13,12 +14,10 @@ const LanguageDropdown = ({ onSetLanguage }) => {
         onSetLanguage(e.target.value);
     };
     return (
-        <div>
-            <form >
-                <select value={select} onChange={onChangeLanguage}>
-                    {languagesList}
-                </select>
-            </form>
+        <div className="LanguageDropdown">
+            <select value={select} onChange={onChangeLanguage}>
+                {languagesList}
+            </select>
         </div>
     )
 };

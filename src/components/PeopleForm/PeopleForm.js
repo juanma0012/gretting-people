@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as actions from './actions';
+import './PeopleForm.css';
 
 const PeopleForm = ({ onSetPeople }) => {
     let value;
@@ -9,10 +10,8 @@ const PeopleForm = ({ onSetPeople }) => {
         onSetPeople(e.target.value);
     }
     return (
-        <div>
-            <form>
-                <textarea value={value} rows="3" cols="20" onChange={onChange}></textarea>
-            </form>
+        <div className="PeopleForm">
+            <textarea value={value} onChange={onChange}></textarea>
         </div>
     )
 };

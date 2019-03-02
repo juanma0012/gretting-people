@@ -1,0 +1,7 @@
+.LanguageDropdown >  select{
+    margin: 5px 15px 0;
+    border-radius: 5px;
+    width: 370px;
+    font-size: 0.9em;
+    padding: 2px;
+}
