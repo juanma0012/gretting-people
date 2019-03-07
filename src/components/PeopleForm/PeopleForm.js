@@ -2,16 +2,16 @@ import { connect } from 'react-redux';
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as actions from './actions';
-import './PeopleForm.css';
+import './peopleForm.css';
 
 const PeopleForm = ({ onSetPeople }) => {
     let value;
-    const onChange = e => {
+    const typingNames = e => {
         onSetPeople(e.target.value);
     }
     return (
-        <div className="PeopleForm">
-            <textarea value={value} onChange={onChange}></textarea>
+        <div className="peopleForm">
+            <textarea value={value} onChange={typingNames}></textarea>
         </div>
     )
 };

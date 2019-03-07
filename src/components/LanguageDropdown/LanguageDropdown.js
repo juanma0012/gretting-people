@@ -1,20 +1,20 @@
 import { connect } from 'react-redux'
 import React from 'react'
 import PropTypes from 'prop-types'
+import { greetingByLanguage, toCapitalLetter } from '../../shared/utility';
 import * as actions from './actions'
-import './LanguageDropdown.css';
+import './languageDropdown.css';
 
 const LanguageDropdown = ({ onSetLanguage }) => {
     let select;
-    const languages = ['english', 'spanish', 'french', 'portuguese', 'italian'];
+    let languages = Object.keys(greetingByLanguage);
     const languagesList = languages.map((language, i) => (
-        <option value={language} key={i}>{language.charAt(0).toUpperCase() + language.slice(1)}</option>
+        <option value={language} key={i}>{toCapitalLetter(language)}</option>
     ));
-    const onChangeLanguage = e => {
-        onSetLanguage(e.target.value);
-    };
+    const onChangeLanguage = e => onSetLanguage(e.target.value);
+
     return (
-        <div className="LanguageDropdown">
+        <div className="languageDropdown">
             <select value={select} onChange={onChangeLanguage}>
                 {languagesList}
             </select>

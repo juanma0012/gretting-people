@@ -5,7 +5,7 @@ export const setLanguage = (language) => {
     return (dispatch, getState) => {
         dispatch({ type: actionTypes.SET_LANGUAGE, language });
         let state = getState();
-        let people = state.peopleForm.people;
+        let people = state.peopleReducer.people;
         dispatch(greetingActions.setGreetings(people, language));
     }
 };

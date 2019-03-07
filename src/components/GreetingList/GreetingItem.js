@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Greeting = ({ text }) => (
-    <li className="Greeting">{text}</li>
+const GreetingItem = ({ text }) => (
+    <li className="greetingItem">{text}</li>
 )
 
-Greeting.propTypes = {
+GreetingItem.propTypes = {
     text: PropTypes.string.isRequired
 }
 
-export default Greeting
+export default GreetingItem

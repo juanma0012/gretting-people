@@ -1,15 +1,6 @@
-.App {
+.app {
   text-align: center;
 }
-.App > h1 {
+.app > h1 {
   color: #535353;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

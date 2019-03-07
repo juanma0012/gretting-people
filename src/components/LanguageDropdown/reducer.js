@@ -1,9 +1,9 @@
 import { resolveEach } from 'redux-resolver';
-import { updateObject } from '../../shared/utility';
+import { updateObject, defaultLanguage } from '../../shared/utility';
 import * as actionTypes from './actionTypes';
 
 const initialState = {
-    language: "english"
+    language: defaultLanguage
 };
 
 const setLanguage = (state, action) => {

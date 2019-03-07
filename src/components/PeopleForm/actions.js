@@ -6,7 +6,7 @@ export const setPeople = (peopleString) => {
         let people = peopleString.split('\n').filter(item => item.trim() !== '');
         dispatch({ type: actionTypes.SET_PEOPLE, people });
         let state = getState();
-        let language = state.languageDropdown.language;
+        let language = state.languageReducer.language;
         dispatch(greetingActions.setGreetings(people, language));
     }
 };
