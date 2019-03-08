@@ -5,7 +5,7 @@ import { greetingByLanguage, toCapitalLetter } from '../../shared/utility';
 import * as actions from './actions'
 import './languageDropdown.css';
 
-const LanguageDropdown = ({ onSetLanguage }) => {
+export const LanguageDropdown = ({ onSetLanguage }) => {
     let select;
     let languages = Object.keys(greetingByLanguage);
     const languagesList = languages.map((language, i) => (

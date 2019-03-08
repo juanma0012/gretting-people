@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component GreetingList  WHEN is initialized  SHOULD render correctly  1`] = `
+<div
+  className="greetingList"
+>
+  <ul>
+    <GreetingItem
+      key="0"
+      text="First greeting"
+    />
+    <GreetingItem
+      key="1"
+      text="Second greeting"
+    />
+  </ul>
+</div>
+`;

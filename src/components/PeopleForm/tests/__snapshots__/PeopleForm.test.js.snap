@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PeopleForm  WHEN is initialized  SHOULD render correctly  1`] = `
+<div
+  className="peopleForm"
+>
+  <textarea
+    onChange={[Function]}
+  />
+</div>
+`;

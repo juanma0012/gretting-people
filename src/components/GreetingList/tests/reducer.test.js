@@ -9,6 +9,7 @@ describe('GreetingList reducer', () => {
             });
         });
     });
+
     describe('WHEN dispatch the action SET_GREETINGS', () => {
         it('SHOULD store the new language in the state', () => {
             expect(reducer({

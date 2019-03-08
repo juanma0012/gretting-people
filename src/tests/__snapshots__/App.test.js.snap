@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component App  WHEN is initialized  SHOULD render correctly  1`] = `
+<div
+  className="app"
+>
+  <h1>
+    Greeting people
+  </h1>
+  <br />
+  <Connect(PeopleForm) />
+  <br />
+  <Connect(LanguageDropdown) />
+  <br />
+  <Connect(GreetingList) />
+</div>
+`;

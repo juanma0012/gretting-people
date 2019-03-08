@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import * as actions from './actions';
 import './peopleForm.css';
 
-const PeopleForm = ({ onSetPeople }) => {
+export const PeopleForm = ({ onSetPeople }) => {
     let value;
     const typingNames = e => {
         onSetPeople(e.target.value);

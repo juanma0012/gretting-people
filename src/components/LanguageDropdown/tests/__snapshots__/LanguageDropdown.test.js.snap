@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component LanguageDropdown  WHEN is initialized  SHOULD render correctly  1`] = `
+<div
+  className="languageDropdown"
+>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      key="0"
+      value="english"
+    >
+      English
+    </option>
+    <option
+      key="1"
+      value="spanish"
+    >
+      Spanish
+    </option>
+    <option
+      key="2"
+      value="french"
+    >
+      French
+    </option>
+    <option
+      key="3"
+      value="portuguese"
+    >
+      Portuguese
+    </option>
+    <option
+      key="4"
+      value="italian"
+    >
+      Italian
+    </option>
+  </select>
+</div>
+`;
