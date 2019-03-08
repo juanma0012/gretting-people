@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import PeopleForm from '../PeopleForm';
 
-describe('Component App ', () => {
+describe('Component PeopleForm ', () => {
     describe('WHEN is initialized ', () => {
         it('SHOULD render correctly ', () => {
-            const component = shallow(<App />);
+            const component = shallow(<PeopleForm onSetPeople={() => {}} />);
             expect(component).toMatchSnapshot();
         });
     });

@@ -5,7 +5,13 @@
         "plugin:react/recommended"
     ],
     "globals": {
-        "document": true
+        "document": true,
+        "it": true,
+        "describe": true,
+        "expect": true,
+        "beforeEach": true,
+        "jest": true,
+        "module": true
     },
     "settings": {
         "react": {

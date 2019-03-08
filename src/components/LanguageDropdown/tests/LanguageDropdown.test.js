@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import LanguageDropdown from '../LanguageDropdown';
 
-describe('Component App ', () => {
+describe('Component LanguageDropdown ', () => {
     describe('WHEN is initialized ', () => {
         it('SHOULD render correctly ', () => {
-            const component = shallow(<App />);
+            const component = shallow(<LanguageDropdown onSetLanguage={() => { }} />);
             expect(component).toMatchSnapshot();
         });
     });

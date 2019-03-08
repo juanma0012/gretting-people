@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import GreetingList from '../GreetingList';
 
-describe('Component App ', () => {
+describe('Component GreetingList ', () => {
     describe('WHEN is initialized ', () => {
         it('SHOULD render correctly ', () => {
-            const component = shallow(<App />);
+            const component = shallow(<GreetingList />);
             expect(component).toMatchSnapshot();
         });
     });
